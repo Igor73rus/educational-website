@@ -62,6 +62,3 @@ button:hover {
     font-size: 1.5em;
     cursor: pointer;
 }
-.favorite:active {
-    color: blue; /* Цвет при нажатии */
-}
