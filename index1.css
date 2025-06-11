@@ -57,8 +57,10 @@ button:hover {
     opacity: 0.8;
 }
 
-.favorite {
-    float: right;
-    font-size: 1.5em;
-    cursor: pointer;
+.card {
+     position: relative; 
 }
+.heart { 
+    position: absolute; top: 8%;right: 12%; z-index: 1;
+    }
+    
