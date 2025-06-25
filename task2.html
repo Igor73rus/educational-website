@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Андрей Геласимов. Холод</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .heart {
+            fill: transparent;
+            stroke: black;
+        }
+
+        .heart:hover {
+            stroke: red;
+        }
+    </style>
+
+
+    </head>
+
+    <body>
+        <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="-1 -1 18 18">
+            <path
+                d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" />
+        </svg>
+
+        <script>
+            let isFavorite = false;
+            const heartSVG = document.querySelector(".heart")
+
+            heartSVG.addEventListener('click', () => {
+                isFavorite = !isFavorite;
+                heartSVG.style.fill = isFavorite ? "red" : ""
+                heartSVG.style.stroke = isFavorite ? "red" : ""
+            })
+
+        </script>
+        <a href="index.html">
+            <button>На главную</button>
+        </a>
+        <link rel="stylesheet" href="task2.css">
+        <div class="card">
+            <span class="favorite"></span>
+            <img src="img/task2/Книга.jpg" alt="Книга">
+            <h2>Андрей Геласимов. Холод</h2>
+            <p>Роман в трех действиях с антрактами.
+                Когда всемирно известный скандальный режиссер Филиппов решает вернуться из Европы на родину, в далекий
+                северный город, он и не подозревает, что на уютном "Боинге" летит прямиком в катастрофу: в городе
+                начались веерные отключения электричества и отопления. Люди гибнут от страшного холода, а те, кому
+                удается выжить, делают это любой ценой.
+                Изнеженному, потерявшему смысл жизни Филе приходится в срочном порядке пересмотреть свои взгляды на
+                жизнь и совершить подвиг, на который ни он, ни кто-либо вокруг уже и не рассчитывал. </p>
+            <div>
+                <span class="price">324 ₽</span>
+                <span class="discount">648 ₽</span>
+            </div>
+            <button>Добавить в корзину</button>
+        </div>
+    </body>
+
+</html>
